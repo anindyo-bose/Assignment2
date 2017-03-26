@@ -24,32 +24,7 @@
       });
   });
   </script>
-  <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
 <!-- JavaScripts Ends-->
 
 <!-- Css Is defined Here -->
@@ -120,25 +95,28 @@ $(document).ready(function(){
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
+      <!-- Navigation Bar Items On Left Side -->
       <li class="active"><a href="#">Home</a></li>
-      <li><a href=" " data-scroll="true" data-id="#whoWeAre">About Us</a></li>
-      <li><a href="#">What We Do</a></li>
-      <li><a href="#">Our Famous Products</a></li>
-      <li><a href="#">Authorized Dealer</a></li>
-      <li><a href="#">Meet Our Team</a></li>
-      <li><a href="#">No. Don't lie</a></li>
-      <li><a href="#">Where To Meet</a></li>
-    </ul>
+      <li><a href="#whoWeAre" data-scroll="true" data-id="#whoWeAre">About Us</a></li>
+      <li><a href="#workflow" data-scroll="true" data-id="#workflow">What We Do</a></li>
+      <li><a href="#projects" data-scroll="true" data-id="#projects">Our Famous Products</a></li>
+      <li><a href="#uitools" data-scroll="true" data-id="#uitools">Authorized Dealer</a></li>
+      <li><a href="#clients" data-scroll="true" data-id="#clients">Clients</a></li>
+      <li><a href="#team" data-scroll="true" data-id="#team">Team</a></li>
+      <li><a href="#numbers" data-scroll="true" data-id="#numbers">No. Don't lie</a></li>
+      <li><a href="#contact" data-scroll="true" data-id="#contact">Contact</a></li>
 
+    </ul>
+    <!-- Navigation Bar Items On Right Side -->
     <ul class="nav navbar-nav navbar-right">
       <li><a href="https://www.facebook.com" target="_blank"><span class="inln"><img src="Images\Icons Images\facebook-4-256.png" width="40px"  height="30px" alt= "Facebook" class="img-circle item"></span></a></li>
-      <li><li><a href="https://twitter.com" target="_blank"><span class="inln"><img src="Images\Icons Images\twitter-4-256.png" width="40px" height="30px"alt= "Twitter" class="img-circle item"></span></a></li>
+      <li><a href="https://twitter.com" target="_blank"><span class="inln"><img src="Images\Icons Images\twitter-4-256.png" width="40px" height="30px"alt= "Twitter" class="img-circle item"></span></a></li>
       <li><a href="https://plus.google.com/" target="_blank"><span class="inln"><img src="Images\Icons Images\google-plus-4-256.png" width="40px" height="30px" alt= "Google+"></span></a></li>
     </ul>
   </div>
   </div>
 </nav>
-
+<!-- Background Image -->
 <div class="parallax">
   <br>
 <h1 style="color:Black;  " > New Chandan Musicals</h1>
@@ -146,7 +124,7 @@ $(document).ready(function(){
 
 </header>
 <!-- Header Section Ends-->
-  <br>
+  <hr>
   <!-- About Us Starts-->
   <div class="jumbotron text-center" id="whoWeAre" >
   <h2>Who We Are</h2>
@@ -156,19 +134,20 @@ Now the shop is slightly shifted inside that same lane, where we have expanded o
 It is mainly due to our perseverance with maintaining good quality with reasonable and justified price range which satisfied customers and bestowed their trust on us. We also do honour our valued customers with the kind patronage of everyone we could grow and now can boast to be the leading manufacturer/trader of Musical Instrument in Ranchi.
 </small></p>
 </div>
-  <br>
+  <hr>
+
   <!-- What We Do Starts -->
-  <div class="jumbotron text-center">
+  <div class="jumbotron text-center" id="workflow">
   <h2>What We Do</h2>
   <br>
-  <p style="font-family: 'Nova Oval', cursive;"><small>
+  <p style="font-family: 'Nova Oval', cursive;" id="whoWeAre"><small>
     We have an expert team of artisan who take care of all our own manufactured musical items like Harmonium, Tabla, Tanpura, Sitar, Esraj, Sarangee, surmandal, Violin, Naal, Dholak, Shreekhole, (Pakhwaz / Mridangam), Flutes, Ghungroo etc. and our tradable items with all leading brands guitar, keyboard, octopad, amplifier, mixer, composer and the next generation and most popular Electronic Tanpura, Tabla, and many more. You can get everything musical under one roof.
   </small></p>
 </div>
-  <br>
+  <hr>
 
   <!-- Our Famous Products Starts -->
-  <div class="jumbotron text-center">
+  <div class="jumbotron text-center" id="projects">
     <h2>Our Famous Products</h2>
     <br>
      <div class="row jobs">
@@ -214,11 +193,11 @@ It is mainly due to our perseverance with maintaining good quality with reasonab
   </div>
 </div>
 
-<br>
+<hr>
 
 <!-- Our Delearships Starts -->
 <!-- Brand row 1 -->
-  <div class="jumbotron text-center">
+  <div class="jumbotron text-center"  id="uitools">
     <h2> Our Dealerships</h2>
     <br>
     <div class="row">
@@ -285,10 +264,10 @@ It is mainly due to our perseverance with maintaining good quality with reasonab
     </div>
     </div>
     </div>
-<br>
+<hr>
 
 <!-- What People Think Starts -->
-<div class="jumbotron text-center">
+<div class="jumbotron text-center" id="clients">
   <h2 >What People Think</h2>
 
   <div class="tab-content">
@@ -320,16 +299,17 @@ It is mainly due to our perseverance with maintaining good quality with reasonab
   </div>
   </div>
   </div>
-  <br>
+
+  <hr>
 
 
 <!-- Meet Our team Starts -->
 <!-- Member 1 -->
-  <div class="jumbotron text-center">
+  <div class="jumbotron text-center" id="team">
       <h2>Meet Our Team</h2>
       <br>
       <div class="row jobs">
-      <div class="col-sm-3 " style="background-color:lavender;"> <img src="Images\Team\Anindyo.jpg" width="200px" height="200px" class="img-circle item">
+      <div class="col-sm-3 "  style="background-color:lavenderblush;"> <img src="Images\Team\Anindyo.jpg" width="200px" height="200px" class="img-circle item">
       <div class="caption">
       <h2>Anindyo Bose</h2>
       <p><small>Technical Support</small></p>
@@ -342,7 +322,7 @@ It is mainly due to our perseverance with maintaining good quality with reasonab
       </div>
       </div>
 <!-- Member 2 -->
-      <div class="col-sm-3 jobs " style="background-color:lavenderblush;"><img src="Images\Team\Ayoush.jpg" width="200px" height="200px" class="img-circle item">
+      <div class="col-sm-3 jobs "><img src="Images\Team\Ayoush.jpg" width="200px" height="200px" class="img-circle item">
       <div class="caption ">
       <h2>Ayoush Mukherjee</h2>
       <p><small>Technical Head</small></p>
@@ -355,7 +335,7 @@ It is mainly due to our perseverance with maintaining good quality with reasonab
       </div>
       </div>
 <!-- Member 3 -->
-      <div class="col-sm-3 " style="background-color:lavender;"><img src="Images\Team\Arnab.jpg" width="200px" height="200px" class="img-circle item">
+      <div class="col-sm-3 "  style="background-color:lavenderblush;"><img src="Images\Team\Arnab.jpg" width="200px" height="200px" class="img-circle item">
       <div class="caption">
       <h2>Arnab Bose</h2>
       <p><small>Executive Officer</small></p>
@@ -368,7 +348,7 @@ It is mainly due to our perseverance with maintaining good quality with reasonab
       </div>
       </div>
 <!-- Member 4 -->
-      <div class="col-sm-3 " style="background-color:lavenderblush;"><img src="Images\Team\Pia.jpg" width="200px" height="200px" class="img-circle item">
+      <div class="col-sm-3 "><img src="Images\Team\Pia.jpg" width="200px" height="200px" class="img-circle item">
       <div class="caption">
       <h2>Atrayee Bose</h2>
       <p><small>Quality Assurance</small></p>
@@ -382,9 +362,10 @@ It is mainly due to our perseverance with maintaining good quality with reasonab
       </div>
     </div>
     </div>
-<br>
+
+<hr>
   <!-- No Dont Lie Starts -->
-  <div class="jumbotron text-center">
+  <div class="jumbotron text-center" id="numbers">
     <h2 >Numbers Don't Lie</h2>
     <h4>"Started from the bottom now we're here" </h4>
     <div class="row">
@@ -392,14 +373,34 @@ It is mainly due to our perseverance with maintaining good quality with reasonab
     <div class="col-sm-4" ><h3>Franchise</h3> Our Organization Has Authorized Dealership of 20+ Leading Manufacturing Companies Accross The World For Professional Musical Instuments.  </div>
     <div class="col-sm-4" ><h3>Branches </h3> We Serve from 10+ Outlets Across The State And Also Extended To The Neghbouring States To Provide Quick And Quality Service.</div>
   </div>
+</div>
 
-    </div>
-    <br>
+    <hr>
   <!-- Where To Meet Starts -->
-  <div  class="jumbotron text-center">
-    <h2>Where To Meet</h2>
+<div  class="jumbotron text-center" id="contact">
+  <div class="contact-container">
+      <div class="address-container add-animation animation-1">
+        <div class="address">
+          <h2>Where to meet ?</h2>
+          <p class="text-gray">
+          “N-81, Barakhamba Road, <br>
+          Block N,Cannaught Place, <br>
+          New Delhi, Delhi 110001”
+          </p>
+          <h4>Want to say hello?</h4>
+          <a target="_blank" href="#"  class="btn btn-black btn-contact">
+          CONTACT US <i class="fa fa-paper-plane"></i>
+          </a>
+          <h4>Thank you Visiting Our Site!</h4>
+
+
+
+      </div>
+  </div>
+<div class="jumbotron text-center">
+    <h2>Maps</h2>
     <br>
-    <div id="map"></div>
+    <div class="big-map" id="map"></div>
     <script>
     function initMap() {
 
@@ -419,8 +420,10 @@ It is mainly due to our perseverance with maintaining good quality with reasonab
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4WaSayVgWvf3ICROXdvtL4_LmQ_i9B04&callback=initMap">
     </script>
     </div>
-
 </div>
+</div>
+</div>
+<hr>
 <!-- footer Starts-->
 <footer>
   <ul class="nav navbar-nav ">
