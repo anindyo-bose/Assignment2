@@ -24,6 +24,32 @@
       });
   });
   </script>
+  <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 <!-- JavaScripts Ends-->
 
 <!-- Css Is defined Here -->
@@ -74,11 +100,12 @@
 
 <!-- Main Content Of the Page -->
 <body >
+
   <div class="back">
   <!-- Header Section with navigation bar and parallax-->
 <header class="jumbotron text-center"  width=1024px>
 
-
+<!-- Navigation Bar Starts -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -94,7 +121,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#" data-scroll="true" data-id="#whoWeAre">About Us</a></li>
+      <li><a href=" " data-scroll="true" data-id="#whoWeAre">About Us</a></li>
       <li><a href="#">What We Do</a></li>
       <li><a href="#">Our Famous Products</a></li>
       <li><a href="#">Authorized Dealer</a></li>
@@ -297,6 +324,7 @@ It is mainly due to our perseverance with maintaining good quality with reasonab
 
 
 <!-- Meet Our team Starts -->
+<!-- Member 1 -->
   <div class="jumbotron text-center">
       <h2>Meet Our Team</h2>
       <br>
@@ -313,7 +341,7 @@ It is mainly due to our perseverance with maintaining good quality with reasonab
       <hr>
       </div>
       </div>
-
+<!-- Member 2 -->
       <div class="col-sm-3 jobs " style="background-color:lavenderblush;"><img src="Images\Team\Ayoush.jpg" width="200px" height="200px" class="img-circle item">
       <div class="caption ">
       <h2>Ayoush Mukherjee</h2>
@@ -326,7 +354,7 @@ It is mainly due to our perseverance with maintaining good quality with reasonab
       <hr>
       </div>
       </div>
-
+<!-- Member 3 -->
       <div class="col-sm-3 " style="background-color:lavender;"><img src="Images\Team\Arnab.jpg" width="200px" height="200px" class="img-circle item">
       <div class="caption">
       <h2>Arnab Bose</h2>
@@ -339,7 +367,7 @@ It is mainly due to our perseverance with maintaining good quality with reasonab
       <hr>
       </div>
       </div>
-
+<!-- Member 4 -->
       <div class="col-sm-3 " style="background-color:lavenderblush;"><img src="Images\Team\Pia.jpg" width="200px" height="200px" class="img-circle item">
       <div class="caption">
       <h2>Atrayee Bose</h2>
@@ -374,7 +402,9 @@ It is mainly due to our perseverance with maintaining good quality with reasonab
     <div id="map"></div>
     <script>
     function initMap() {
-    var uluru = {lat: -25.363, lng: 131.044};
+
+
+    var uluru = {lat: 28.631158, lng: 77.222042};
     var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
     center: uluru
